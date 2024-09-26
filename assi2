@@ -1,0 +1,9 @@
+
+
+
+ex #3
+# Define the string
+str = "Hello World"
+
+# Print the string with the specified step
+print(str[::-1])
