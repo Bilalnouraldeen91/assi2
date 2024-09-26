@@ -17,3 +17,13 @@ str = "Hello World"
 
 # Print the string with the specified step
 print(str[::-1])
+
+
+ex #5
+password = input("Enter your password: ")
+
+# Check the password
+if len(password) > 8 and any(c.islower() for c in password) and any(c.isupper() for c in password) and any(c.isdigit() for c in password):
+    print("Strong password")
+else:
+    print("Weak password")
