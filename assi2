@@ -1,4 +1,4 @@
-ex 3!
+ex 1
 
 def factorial(n):
     if n < 0:
@@ -9,15 +9,34 @@ def factorial(n):
 num = int(input("Enter a non-negative integer: "))
 print("The factorial is:", factorial(num))
 
+ex #2
+def find_divisors(n):
+    divisors = []
+    for i in range(1, n + 1):
+        if n % i == 0:
+            divisors.append(i)
+    return divisors
 
+# Get user input
+number = int(input("Enter an integer: "))
+print(find_divisors(number))
+
+ex #2
+def filter_even_numbers(numbers):
+    return [num for num in numbers if num % 2 == 0]
+
+input_list = [int(num) for num in input("Enter numbers separated by spaces: ").split()]
+output_list = filter_even_numbers(input_list)
+print(output_list)
 
 ex #3
-# Define the string
-str = "Hello World"
+def reverseString(s):
+    return s[::-1]
 
-# Print the string with the specified step
-print(str[::-1])
-
+# Get input from the user
+user_input = input("Enter a string to reverse: ")
+result = reverseString(user_input)
+print("Reversed string:", result)
 
 ex #5
 password = input("Enter your password: ")
