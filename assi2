@@ -10,6 +10,7 @@ num = int(input("Enter a non-negative integer: "))
 print("The factorial is:", factorial(num))
 
 ex #2
+
 def filter_even_numbers(numbers):
     return [num for num in numbers if num % 2 == 0]
 
@@ -18,6 +19,7 @@ output_list = filter_even_numbers(input_list)
 print(output_list)
 
 ex #3
+
 def reverseString(s):
     return s[::-1]
 
@@ -40,6 +42,7 @@ print(find_divisors(number))
 
 
 ex #5
+
 password = input("Enter your password: ")
 
 # Check the password
@@ -49,3 +52,16 @@ else:
     print("Weak password")
 
 ex # 6
+
+def is_valid_ipv4(ip):
+    parts = ip.split('.')
+    if len(parts) != 4:
+        return False
+    for part in parts:
+    
+***this part was a bit hard for me, I tried a lot but It didn’t work**
+
+# ask the user to enter the IPv4
+ip_address = input("Enter an IPv4 address: ")
+print(is_valid_ipv4(ip_address))
+
